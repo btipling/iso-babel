@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "iso-bable is a babel plugin that  helps you solve server or client only problems in isomorphic code bases.",
   "scripts": {
-    "testServer": "./server-test.js && node ./gen-server.js",
-    "testClient": "./client-test.js && node ./gen-client.js"
+    "testServer": "./test/server-test.js && node ./gen-server.js",
+    "testClient": "./test/client-test.js && node ./gen-client.js",
+    "cleanTest": "rm gen-*"
   },
   "main": "iso-babel.js",
   "keywords": [
