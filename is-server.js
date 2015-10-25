@@ -1,2 +1,3 @@
 const pluginGenerator = require('./lib/plugin-generator');
-module.exports = pluginGenerator('isClient', 'isServer');
+const isoBabel = require('./iso-babel');
+module.exports = pluginGenerator(isoBabel.isClient, isoBabel.isServer);
