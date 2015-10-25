@@ -1,6 +1,6 @@
 #iso-babel
 
-This package is a [Babel](https://github.com/babel/babel) plugin lets you target the
+This package is a [Babel](https://github.com/babel/babel) plugin that lets you target the
 server or client directly in isomorphic JavaScript.
 
 For example this:
