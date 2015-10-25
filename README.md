@@ -40,7 +40,7 @@ npm i iso-babel
 For server:
 ```bash
 babel --plugins iso-babel/is-server myscript.js > server.js
-```bash
+```
 For client:
 ```bash
 babel --plugins iso-babel/is-client myscript.js > client.js
