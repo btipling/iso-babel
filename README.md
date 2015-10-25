@@ -1,4 +1,4 @@
-#iso-babel.js
+#iso-babel
 
 This package is a bable plugin lets you target the server or client directly in isomorphic JavaScript.
 
