@@ -4,7 +4,7 @@
 const fs = require("fs");
 const babel = require("babel")
 
-fs.readFile('./example.js', 'utf8', (err, contents) => {
+fs.readFile('./example/script.js', 'utf8', (err, contents) => {
   const result = babel.transform(contents, {
     plugins: ['./is-client'],
   });

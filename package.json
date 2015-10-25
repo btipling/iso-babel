@@ -5,7 +5,8 @@
   "scripts": {
     "testServer": "./test/server-test.js && node ./gen-server.js",
     "testClient": "./test/client-test.js && node ./gen-client.js",
-    "cleanTest": "rm gen-*"
+    "cleanTest": "rm gen-*",
+    "test": "npm run testServer && npm run testClient && npm run cleanTest"
   },
   "main": "iso-babel.js",
   "keywords": [
