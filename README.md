@@ -43,7 +43,7 @@ babel --plugins iso-babel/is-server myscript.js > server.js
 ```
 For client:
 ```
-babel --plugins iso-babel/is-server myscript.js > client.js
+babel --plugins iso-babel/is-client myscript.js > client.js
 ```
 
 From JavaScript:
