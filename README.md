@@ -49,6 +49,9 @@ if (isServer) {
   console.log(isServer);
 } else if (isClient) {
   console.log(isClient);
+  if (isServer) {
+    // This code will never appear anywhere or run.
+  }
 } else {
   console.log('This code will never appear anywhere and will never run.');
 }

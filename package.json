@@ -1,6 +1,6 @@
 {
   "name": "iso-babel",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "iso-babel is a Babel plugin that helps you solve server or client only problems in isomorphic code bases.",
   "scripts": {
     "testIf": "./test/server-client-test.js && node ./gen-server.js && node ./gen-client.js",
