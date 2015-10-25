@@ -49,8 +49,8 @@ babel --plugins iso-babel/is-client myscript.js > client.js
 From JavaScript:
 
 ```javascript
-const fs = require("fs");
-const babel = require("babel")
+const fs = require('fs');
+const babel = require('babel')
 
 fs.readFile('./example.js', 'utf8', (err, contents) => {
 
