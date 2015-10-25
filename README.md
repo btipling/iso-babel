@@ -5,7 +5,7 @@ server or client directly in isomorphic JavaScript.
 
 For example this:
 
-```
+```javascript
 import {isServer, isClient} from 'iso-babel';
 
 if (isServer) {
@@ -18,7 +18,7 @@ if (isClient) {
 
 ...becomes this on the server:
 
-```
+```javascript
 import {isServer} from 'iso-babel';
 
 console.log(isServer);
@@ -26,7 +26,7 @@ console.log(isServer);
 
 ...and becomes this on the client:
 
-```
+```javascript
 import {isClient} from 'iso-babel';
 
 console.log(isClient);
@@ -38,29 +38,26 @@ console.log(isClient);
 npm i iso-babel
 ```
 For server:
-```
+```bash
 babel --plugins iso-babel/is-server myscript.js > server.js
-```
+```bash
 For client:
-```
+```bash
 babel --plugins iso-babel/is-client myscript.js > client.js
 ```
 
 From JavaScript:
 
-```
+```javascript
 const fs = require("fs");
 const babel = require("babel")
 
 fs.readFile('./example.js', 'utf8', (err, contents) => {
+
   const result = babel.transform(contents, {
-    extra: {
-      whatever: {
-        planB: true,
-      },
-    },
     plugins: ['iso-babel/is-server'],
   });
+
   fs.writeFile('./bundle.js', result.code, {encoding: 'utf8'}, err => {
     if (err) {
       console.log('Received an error', err);
