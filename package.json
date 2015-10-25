@@ -3,10 +3,11 @@
   "version": "1.0.6",
   "description": "iso-babel is a Babel plugin that helps you solve server or client only problems in isomorphic code bases.",
   "scripts": {
-    "testServer": "./test/server-test.js && node ./gen-server.js",
-    "testClient": "./test/client-test.js && node ./gen-client.js",
+    "testIf": "./test/server-client-test.js && node ./gen-server.js && node ./gen-client.js",
+    "testElse": "./test/else-test.js && node ./gen-else-server.js && node ./gen-else-client.js",
+    "testElseIf": "./test/else-if-test.js && node ./gen-else-if-server.js && node ./gen-else-if-client.js",
     "cleanTest": "rm gen-*",
-    "test": "npm run testServer && npm run testClient && npm run cleanTest"
+    "test": "npm run testIf && npm run testElse && npm run testElseIf && npm run cleanTest"
   },
   "repository": {
     "type" : "git",

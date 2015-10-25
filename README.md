@@ -32,6 +32,28 @@ import {isClient} from 'iso-babel';
 console.log(isClient);
 ```
 
+This also works:
+
+```
+if (isServer) {
+  console.log('This is the server.');
+} else {
+  console.log('We are running on client!');
+}
+```
+
+This is too:
+
+```
+if (isServer) {
+  console.log(isServer);
+} else if (isClient) {
+  console.log(isClient);
+} else {
+  console.log('This code will never appear anywhere and will never run.');
+}
+```
+
 ##Usage
 
 ```
