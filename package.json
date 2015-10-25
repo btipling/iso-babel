@@ -1,12 +1,16 @@
 {
   "name": "iso-babel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "iso-babel is a babel plugin that helps you solve server or client only problems in isomorphic code bases.",
   "scripts": {
     "testServer": "./test/server-test.js && node ./gen-server.js",
     "testClient": "./test/client-test.js && node ./gen-client.js",
     "cleanTest": "rm gen-*",
     "test": "npm run testServer && npm run testClient && npm run cleanTest"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/btipling/iso-babel.git"
   },
   "main": "iso-babel.js",
   "keywords": [
