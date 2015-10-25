@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 'use strict';
 
-const fs = require("fs");
-const babel = require("babel")
+const fs = require('fs');
+const babel = require('babel')
 
 fs.readFile('./example/script.js', 'utf8', (err, contents) => {
   const result = babel.transform(contents, {
