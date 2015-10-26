@@ -6,12 +6,13 @@
     "testIf": "./test/server-client-test.js && node ./gen-server.js && node ./gen-client.js",
     "testElse": "./test/else-test.js && node ./gen-else-server.js && node ./gen-else-client.js",
     "testElseIf": "./test/else-if-test.js && node ./gen-else-if-server.js && node ./gen-else-if-client.js",
+    "testLoader": "./test/loader-test.js && node ./gen-load-server.js && node ./gen-load-client.js",
     "cleanTest": "rm gen-*",
-    "test": "npm run testIf && npm run testElse && npm run testElseIf && npm run cleanTest"
+    "test": "npm run testIf && npm run testElse && npm run testElseIf && npm run testLoader && npm run cleanTest"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/btipling/iso-babel.git"
+    "type": "git",
+    "url": "https://github.com/btipling/iso-babel.git"
   },
   "main": "iso-babel.js",
   "keywords": [
@@ -21,7 +22,19 @@
   ],
   "author": "Bjorn Tipling",
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=4.2.1"
+  },
   "devDependencies": {
     "babel": "^5.8.29"
+  },
+  "iso-babel": {
+    "load": {
+      "isServer": "./example/server",
+      "isClient": "./example/client"
+    }
+  },
+  "dependencies": {
+    "packpath": "^0.1.0"
   }
 }
